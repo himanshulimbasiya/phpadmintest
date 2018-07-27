@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="heading"  style="font-family: Montserrat-Regular; padding-top: 10px;">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-1">
+                <button class="navbar-toggler ml-auto toggle-btn nav-btn" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fa fa-bars"></span>
+                </button>
+            </div>
+            <div class="col-sm-1 col-md-12">
+                <p style="text-align: center; font-size: 17px;">CLOUD CLOSET</p>
+            </div>
+        </div>
+    </div>
+</header>
+
+<nav class="navbar navbar-expand-lg bg-white border-top border-bottom">
+    <h4 class="nav-head">CLOUD CLOSET</h4>
+
+
+    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link color-me" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link color-me" href="#">Summer Collection</a>
+            </li><li class="nav-item">
+                <a class="nav-link color-me" href="#">Winter Collection</a>
+            </li><li class="nav-item">
+                <a class="nav-link color-me" href="#">Category 3</a>
+            </li><li class="nav-item">
+                <a class="nav-link color-me" href="#">Category 4</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link color-me" href="#">How It Works</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link color-me" href="#">FAQ's</a>
+            </li>
+        </ul>
+    </div>
+
+
+</nav>
+
+<div class="container-fluid" >
+    <div class="row">
+        <div class="col-sm-3 col-md-6 col-lg-6 border-bottom col-padding">
+            <div id="demo" class="carousel slide" data-ride="carousel" >
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                </ul>
+
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="ca.jpg" alt="Los Angeles" class="slider-img" style="" >
+                    </div>
+                    <div class="carousel-item">
+                        <img src="ca.jpg" alt="Chicago">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="ca.jpg" alt="New York">
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+        <div class="col-sm-3 col-md-6 col-lg-6 border-bottom">
+            <div style="padding-top: 50px; text-align: center">
+                <h3><i>Your very own wardrobe in the Cloud!</i></h3>
+                <p style="text-align: center; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Nam rutrum tristique feugiat. Morbi lacus diam, convallis non urna gravida</p>
+                <div style="padding-top: 50px">
+                    <form method="get" action="/summercollection">
+                        <button type="submit" class="btn-explore">Explore Closet &nbsp;&nbsp;<i class="fas fa-angle-right"></i></button>
+                    </form>
+                </div>
+
+                <h5 style="text-align: center; padding-top: 60px;">Reserve your place today!<br> </h5>
+            </div>
+
+            <div class="form sm-form" style="">
+                <form id="search-form" class="form-search form-horizontal" method="post" action="/send-email">
+                    <input type="text" class="input-search" placeholder="Email Address" name="senderr">
+                    <button type="submit" class="btn-search">Sign Up</button>
+                </form>
+            </div>
+            <h6 style="text-align: center; padding-top: 10px;">*Only limited memberships avaliable at launch.</h6>
+        </div>
+    </div>
+</div>
+<section class="border-bottom">
+    <h3 style="text-align: center; padding-top: 30px">GALLERY</h3>
+    <div class="gallery">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 col-md-3 img-container">
+                    <img src="summer.jpg" class="rounded home-img images">
+                    <div class="middle">
+                        <form method="get" action="/summercollection">
+                            <button type="submit" class="img-btn">View Collection</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-3 img-container">
+                    <img src="summer.jpg" class="rounded home-img images">
+                    <div class="middle">
+                        <form method="get" action="/wintercollection">
+                            <button type="submit" class="img-btn">View Collection</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-3 img-container">
+                    <img src="summer.jpg" class="rounded home-img images">
+                    <div class="middle">
+                        <form method="get" action="/category3">
+                            <button type="submit" class="img-btn">View Collection</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-3 img-container">
+                    <img src="summer.jpg" class="rounded home-img images">
+                    <div class="middle">
+                        <form method="get" action="/category4">
+                            <button type="submit" class="img-btn">View Collection</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="border-bottom">
+    <h3 style="text-align: center; padding-top: 30px">HOW IT WORKS</h3>
+    <div class="gallery">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 circle-box">
+                    <img src="summer.jpg" class="rounded-circle circle-img" style="margin-left: 80px" >
+                </div>
+                <div class="col-md-2 circle-box">
+                    <img src="summer.jpg" class="rounded-circle circle-img" style="margin-left: 80px">
+                </div>
+                <div class="col-md-2 circle-box">
+                    <img src="summer.jpg" class="rounded-circle circle-img" style="margin-left: 80px">
+                </div>
+                <div class="col-md-2 circle-box" >
+                    <img src="summer.jpg" class="rounded-circle circle-img" style="margin-left: 80px">
+                </div>
+                <div class="col-md-2 circle-box">
+                    <img src="summer.jpg" class="rounded-circle circle-img" style="margin-left: 80px">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="border-bottom">
+    <h3 style="text-align: center; padding-top: 30px">FAQ's</h3>
+    <div class="container">
+        <div id="accordion" class="accordion">
+            <div class="card mb-0 border-0" style="margin-top: 50px;">
+                <div class="card-header collapsed border" data-toggle="collapse" href="#collapseOne">
+                    <a class="card-title" >
+                        Item 1
+                    </a>
+                </div>
+                <div id="collapseOne" class="card-body collapse" data-parent="#accordion" >
+                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
+                        aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
+                        craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </p>
+                </div>
+                <div class="card-header collapsed border" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" >
+                    <a class="card-title">
+                        Item 2
+                    </a>
+                </div>
+                <div id="collapseTwo" class="card-body collapse" data-parent="#accordion">
+                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
+                        aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
+                        craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </p>
+                </div>
+                <div class="card-header collapsed border" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" >
+                    <a class="card-title">
+                        Item 3
+                    </a>
+                </div>
+                <div id="collapseThree" class="collapse" data-parent="#accordion" >
+                    <div class="card-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
+                        aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. samus labore sustainable VHS.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+</section>
+<section>
+    <footer id="myFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <a href="#"><img src="cc.png" width="150px" height="150px" style="margin-top: 20px;"></a>
+                </div>
+                <div class="col-sm-2">
+                    <h5>Get started</h5>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Sign up</a></li>
+                        <li><a href="#">Downloads</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <h5>About us</h5>
+                    <ul>
+                        <li><a href="#">Company Information</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <h5>Support</h5>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Help desk</a></li>
+                        <li><a href="#">Forums</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <div class="social-networks">
+                        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="form footer-form">
+                <form id="search-form" class="form-search form-horizontal">
+                    <input type="text" class="input-search" placeholder="Email Address">
+                    <button type="submit" class="btn-search">SIGN UP</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2016 Copyright Text </p>
+        </div>
+    </footer>
+</section>
+</body>
+</html>

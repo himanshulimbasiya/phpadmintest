@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="heading"  style="text-align: center; font-family: Montserrat-Regular; padding-top: 10px;"><h3><b>CLOUD CLOSET</b></h3></header>
+
+<nav class="navbar navbar-expand-lg bg-white border-top border-bottom">
+    <h4 class="nav-head">CLOUD CLOSET</h4>
+    <button class="navbar-toggler ml-auto toggle-btn" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="fa fa-bars"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link color-me" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle color-me" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Gallery
+                </a>
+                <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                    <div class="container border-left-0">
+                        <div class="row">
+                            <div class="col-sm-3 col-md-3">
+                                <img src="summer.jpg" class="rounded home-img">
+                            </div>
+                            <div class="col-sm-3 col-md-3">
+                                <img src="summer.jpg" class="rounded home-img">
+                            </div>
+                            <div class="col-sm-3 col-md-3">
+                                <img src="summer.jpg" class="rounded home-img">
+                            </div>
+                            <div class="col-sm-3 col-md-3">
+                                <img src="summer.jpg" class="rounded home-img">
+                            </div>
+                        </div>
+                    </div>
+                    <!--  /.container  -->
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link color-me" href="#">How It Works</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link color-me" href="#">FAQ's</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container" id="login">
+    <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+        <div class="card">
+            <div class="card-header bg-info text-white" style="text-align: center">Sign In</div>
+            <div id="input" class="card-body" >
+                <form class="form-horizontal" method="post" action="/loggedin" >
+                    <div id="input" class="input-group">
+                        <input id="inputbox" type="text" class="form-control" name="admin_name" value="" placeholder="Username or Email" >
+                    </div>
+                    <div id="input" class="input-group">
+                        <input id="inputbox" type="password" class="form-control" name="password" placeholder="Password" >
+                    </div>
+                    <div class="col-sm-12 controls">
+                        <input id="inputbox" type="submit" class="btn btn-success bg-info" value="Sign In">
+                    </div><br>
+                    <label style="color: red"><%= error_check %></label>
+                    <div class="form-group">
+                        <div class="col-md-12 control">
+                            <div style="border-top: 1px solid#888; padding-top:15px; font-size:85%" >
+                                Don't have an account!
+                                <a href="/register">Sign Up Here</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

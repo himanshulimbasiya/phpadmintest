@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" async>
+        var myjson = JSON.stringify(stingifiedJson);
+        document.getElementById("json").innerHTML="HI";
+    </script>
+</head>
+<body onload="">
+<header class="heading"  style="text-align: center; font-family: Montserrat-Regular; padding-top: 10px;"><h3><b>CLOUD CLOSET</b></h3></header>
+
+<nav class="navbar navbar-expand-lg bg-white border-top border-bottom" id="nav">
+    <h4 class="nav-head">CLOUD CLOSET</h4>
+    <button class="navbar-toggler ml-auto toggle-btn" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="fa fa-bars"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link color-me" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle color-me" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Gallery
+                </a>
+                <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                    <div class="container border-left-0">
+                        <div class="row">
+                            <div class="col-sm-3 col-md-3">
+                                <img src="summer.jpg" class="rounded home-img">
+                            </div>
+                            <div class="col-sm-3 col-md-3">
+                                <img src="summer.jpg" class="rounded home-img">
+                            </div>
+                            <div class="col-sm-3 col-md-3">
+                                <img src="summer.jpg" class="rounded home-img">
+                            </div>
+                            <div class="col-sm-3 col-md-3">
+                                <img src="summer.jpg" class="rounded home-img">
+                            </div>
+                        </div>
+                    </div>
+                    <!--  /.container  -->
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link color-me" href="#">How It Works</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link color-me" href="#">FAQ's</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<h3 style="text-align: center; padding-top: 30px">Category 3</h3>
+<div class="gallery">
+    <div class="container">
+        <div class="row">
+            <% for (i in img) { %>
+            <div class="col-sm-3 col-md-3">
+                <div class="card border-0">
+                    <button type="button" class="btn btn-link" data-toggle="modal" data-target="#image_modal"><img class="card-img-top" id="images" src="../summer/<%=img[i].image%>" alt="Card image" style=" height: auto; width:100%"></button>
+                    <div class="card-body">
+                        <p class="card-text" style="text-align: center" id="data1"><%=img[i].brand%></p>
+                        <p id="desc" style="text-align: center"><%=img[i].description%></p>
+                        <a href="#" class="btn btn-primary" style="margin-left: 35%">More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="image_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+
+                            <h5 class="modal-title" id="head"><%=img[i].brand%></h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+
+                        </div>
+                        <div class="modal-body">
+                            <img class="card-img-top" id="imgg" alt="Card image" style=" height: auto; width:100%">
+                            <p id="descc"></p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <% } %>
+
+        </div>
+    </div>
+
+</div>
+<p id="json"></p>
+</body>
+</html>

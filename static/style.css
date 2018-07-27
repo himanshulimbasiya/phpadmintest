@@ -1,0 +1,379 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Courgette');
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,700');
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+
+
+
+@font-face {
+    font-family: Courgette-Regular;
+    src: url('../fonts/courgette/Courgette-Regular.ttf');
+}
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url('../fonts/poppins/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: Poppins-Medium;
+    src: url('../fonts/poppins/Poppins-Medium.ttf');
+}
+
+@font-face {
+    font-family: Poppins-Bold;
+    src: url('../fonts/poppins/Poppins-Bold.ttf');
+}
+
+@font-face {
+    font-family: Poppins-Light;
+    src: url('../fonts/poppins/Poppins-Light.ttf');
+}
+
+@font-face {
+    font-family: NotoSans-Regular;
+    src: url('../fonts/notosans/NotoSans-Regular.ttf');
+}
+
+/* adds some margin below the link sets  */
+.navbar .dropdown-menu div[class*="col"] {
+    margin-bottom:1rem;
+}
+
+.navbar .dropdown-menu {
+    border:none;
+    color: #000000 !important;
+    background-color: #ffffff !important;
+}
+
+/* breakpoint and up - mega dropdown styles */
+@media screen and (min-width: 992px) {
+
+    /* remove the padding from the navbar so the dropdown hover state is not broken */
+    .navbar {
+        padding-top:0px;
+        padding-bottom:0px;
+    }
+
+    /* remove the padding from the nav-item and add some margin to give some breathing room on hovers */
+    .navbar .nav-item {
+        padding:.5rem .5rem;
+        margin:0 .25rem;
+    }
+
+    /* makes the dropdown full width  */
+    .navbar .dropdown {position:static;}
+
+    .navbar .dropdown-menu {
+        width:100%;
+        left:0;
+        right:0;
+        /*  height of nav-item  */
+        top:45px;
+    }
+
+    /* shows the dropdown menu on hover */
+    .navbar .dropdown:hover .dropdown-menu, .navbar .dropdown .dropdown-menu:hover {
+        display:block!important;
+    }
+
+    .navbar .dropdown-menu {
+        border: 1px solid rgba(0,0,0,.15);
+        background-color: #fff;
+    }
+
+}
+.navbar-toggler .icon-color{
+   color:#000000 !important;
+}
+.color-me{
+    color: #000000;
+}
+
+.toggle-btn{
+    padding-bottom: 10px;
+}
+
+/* Make the image fully responsive */
+@media screen and (min-width: 421px){
+
+    .nav-head{
+        display: none;
+    }
+    .nav-btn{
+        display:none;
+    }
+    .sm-form {
+        padding-left: 24%;
+        padding-top: 0px
+    }
+    .home-img{
+        width: 200px;
+        height: 300px;
+    }
+    .footer-form{
+        margin-left: 32%
+    }
+    #upload{
+        margin-left: 25%;
+        width: 60%;
+    }
+
+}
+@media screen and (min-width: 300px) {
+    .carousel-inner img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .sm-form{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 70px;
+    }
+    .home-img{
+        width: 100%;
+        height: 100%;
+    }
+    .gallery-box{
+        padding-top: 30px;
+    }
+    .circle-box{
+        padding-left:105px;
+        padding-top: 30px;
+    }
+    .footer-form{
+        margin-left: 8%;
+    }
+    #upload{
+        width: 100%;
+    }
+}
+
+.circle-img{
+    width: 100px;
+    height: 100px;
+}
+
+.gallery{
+    padding-top: 50px;
+    padding-bottom: 133px;
+}
+
+.col-padding{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.slider-img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.accordion .card-header:after {
+    font-family: 'FontAwesome';
+    content: "\f106";
+    float: right;
+}
+.accordion .card-header.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\f107";
+}
+#myFooter {
+    background-color: #ffffff;
+    color: #ffffff;
+    padding-top: 30px;
+}
+
+#myFooter .footer-copyright {
+    background-color: #ffffff;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+}
+
+#myFooter .row {
+    margin-bottom: 60px;
+}
+
+#myFooter .navbar-brand {
+    margin-top: 45px;
+    height: 65px;
+}
+
+#myFooter .footer-copyright p {
+    margin: 10px;
+    color: #000000;
+}
+
+#myFooter ul {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.7;
+}
+
+#myFooter h5 {
+    font-size: 18px;
+    color: #000000;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+#myFooter h2 a{
+    font-size: 50px;
+    text-align: center;
+    color: #000000;
+}
+
+#myFooter a {
+    color: #000000;
+    text-decoration: none;
+}
+
+#myFooter a:hover,
+#myFooter a:focus {
+    text-decoration: none;
+    color: #000000;
+}
+
+#myFooter .social-networks {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 16px;
+}
+
+#myFooter .social-networks a {
+    font-size: 32px;
+    color: #000000;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+#myFooter .social-networks a:hover {
+    text-decoration: none;
+}
+
+#myFooter .facebook:hover {
+    color: #0077e2;
+}
+
+#myFooter .google:hover {
+    color: #ef1a1a;
+}
+
+#myFooter .instagram:hover {
+    color: #8a3ab9;
+}
+
+#myFooter .btn {
+    color: white;
+    background-color: #000000;
+    border-radius: 20px;
+    border: none;
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    line-height: 25px;
+}
+
+@media screen and (max-width: 767px) {
+    #myFooter {
+        text-align: center;
+    }
+}
+.input-search{
+    height:46px;
+    width:50%;
+    padding-left:5px;
+    color:#333;
+}
+
+.btn-search{
+    background: #000000;
+    font-family:Roboto;
+    border:none;
+    color:#FFF;
+    height: 46px;
+    width: 80px;
+}
+
+.btn-explore{
+    background: #000000;
+    font-family:Roboto;
+    border:none;
+    color:#FFF;
+    height: 45px;
+    width: 140px;
+}
+
+h4{
+    color: #000000;
+    font-weight: 700;
+}
+@media screen and (max-width: 750px){
+    header{
+        display: none;
+    }
+    nav{
+        border-top: 0;
+    }
+}
+
+h1{
+    text-align: center;
+}
+#login{
+    margin-left: 33%;
+    margin-top: 14%;
+}
+
+#input{
+    margin-bottom: 25px;
+}
+
+#inputbox{
+    border-radius: .5rem;
+}
+
+.images{
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.img-container:hover .images{
+    opacity: 0.3;
+}
+
+.img-container:hover .middle{
+    opacity: 1;
+}
+
+.img-btn{
+    border-radius: 4px;
+    background: #000000;
+    font-family:Roboto;
+    font-size: 18px;
+    border:none;
+    color:#FFF;
+    height: 69px;
+    width: 140px;
+}
+
